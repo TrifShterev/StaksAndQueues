@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Reverse_String
 {
@@ -6,7 +8,16 @@ namespace Reverse_String
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string input = Console.ReadLine();
+            var stack = new Stack<char>();
+            foreach (var symbol in input)
+            {
+                stack.Push(symbol);
+            }
+            while (stack.Any())
+            {
+                Console.Write(stack.Pop());
+            }
         }
     }
 }
