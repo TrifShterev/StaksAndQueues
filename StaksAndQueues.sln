@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matching Brackets", "Matchi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print Even Numbers", "Print Even Numbers\Print Even Numbers.csproj", "{AAA337D3-36D7-4511-B427-56ED1B48A457}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket", "Supermarket\Supermarket.csproj", "{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traffic Jam", "Traffic Jam\Traffic Jam.csproj", "{07753F04-A7E3-4ACB-95E8-D445C1432F1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{AAA337D3-36D7-4511-B427-56ED1B48A457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA337D3-36D7-4511-B427-56ED1B48A457}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA337D3-36D7-4511-B427-56ED1B48A457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
