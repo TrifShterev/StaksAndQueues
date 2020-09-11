@@ -9,13 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack Sum", "Stack Sum\Stac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple Calculator", "Simple Calculator\Simple Calculator.csproj", "{6AB8347C-C093-4C90-BC8E-333EABA405B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matching Brackets", "Matching Brackets\Matching Brackets.csproj", "{8F4876C3-040E-4F31-BAAB-21E58FDAC71E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matching Brackets", "Matching Brackets\Matching Brackets.csproj", "{8F4876C3-040E-4F31-BAAB-21E58FDAC71E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print Even Numbers", "Print Even Numbers\Print Even Numbers.csproj", "{AAA337D3-36D7-4511-B427-56ED1B48A457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Print Even Numbers", "Print Even Numbers\Print Even Numbers.csproj", "{AAA337D3-36D7-4511-B427-56ED1B48A457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket", "Supermarket\Supermarket.csproj", "{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Supermarket", "Supermarket\Supermarket.csproj", "{8DBF8B11-7066-4B1A-872A-91E0BCCA7E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traffic Jam", "Traffic Jam\Traffic Jam.csproj", "{07753F04-A7E3-4ACB-95E8-D445C1432F1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traffic Jam", "Traffic Jam\Traffic Jam.csproj", "{07753F04-A7E3-4ACB-95E8-D445C1432F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Stack Operations", "Basic Stack Operations\Basic Stack Operations.csproj", "{01167568-D242-486B-AAFF-01060D3819C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Queue Operations", "Basic Queue Operations\Basic Queue Operations.csproj", "{234FFF69-B300-4D41-B529-ACE64F74A6B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07753F04-A7E3-4ACB-95E8-D445C1432F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01167568-D242-486B-AAFF-01060D3819C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01167568-D242-486B-AAFF-01060D3819C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01167568-D242-486B-AAFF-01060D3819C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01167568-D242-486B-AAFF-01060D3819C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234FFF69-B300-4D41-B529-ACE64F74A6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234FFF69-B300-4D41-B529-ACE64F74A6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234FFF69-B300-4D41-B529-ACE64F74A6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234FFF69-B300-4D41-B529-ACE64F74A6B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
