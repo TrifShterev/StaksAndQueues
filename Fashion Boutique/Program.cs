@@ -11,7 +11,7 @@ namespace Fashion_Boutique
             var clothesInTheBox = Console.ReadLine().Split().Select(int.Parse).ToArray();
             Stack<int> box = new Stack<int>(clothesInTheBox);
             var rackCapacity = int.Parse(Console.ReadLine());
-            int racks = 1;
+            int racks = 0;
             int currentOnTheRack = 0;
 
             while (box.Any())
@@ -36,6 +36,10 @@ namespace Fashion_Boutique
                     currentOnTheRack = 0;
                 }
 
+            }
+            if (currentOnTheRack>0)
+            {
+                racks++;
             }
             Console.WriteLine(racks);
 

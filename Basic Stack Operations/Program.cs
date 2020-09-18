@@ -22,24 +22,20 @@ namespace Basic_Stack_Operations
 
             for (int i = 0; i < elementsToPop; i++)
             {
-                if (playingStack.TryPop(out int result))
-                {
-
-                }
-                else
-                {
-                    Console.WriteLine('0');
-                    return;
-                }
+                playingStack.Pop();
 
             }
             if (playingStack.Contains(numberToFind))
             {
                 Console.WriteLine("true");
             }
-            else
+            else if (playingStack.Count>0)
             {
                 Console.WriteLine(playingStack.Min());
+            }
+            else
+            {
+                Console.WriteLine('0');
             }
         }
     }
