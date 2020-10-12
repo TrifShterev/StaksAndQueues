@@ -24,93 +24,70 @@ namespace Flower_Wreaths
 
             int wreathsCounter = 0;
 
-            Stack<int> storedLilies = new Stack<int>();
-            Queue<int> stortedRosses = new Queue<int>();
+            int storedFlowers = 0;
 
-            
-          var  currentLilie = totalLilies.Peek();
-           var currentRosse = totalRosses.Peek();
-            var sum = currentLilie + currentRosse;
-            while (totalLilies.Any())
-            {                              
+            var operations = Math.Min(totalLilies.Count, totalRosses.Count);
+           
+
+            for (int i = 0; i < operations; i++)
+            {
+                int currentLilie = totalLilies.Peek();
+                int currentRosse = totalRosses.Peek();
+                int sum = currentLilie + currentRosse;
+          
              
                 if (sum == 15)
                 {
                     totalLilies.Pop();
                     totalRosses.Dequeue();
                     wreathsCounter++;
+                   
+
 
                 }
                 else if (sum > 15)
                 {
-                    currentLilie -= 2;
-                    sum = currentLilie + currentRosse;
-                    continue;
+                    while (true)
+                    {
+                        currentLilie -= 2;
+                        if (currentLilie+currentRosse == 15)
+                        {
+                            wreathsCounter++;
+                            totalLilies.Pop();
+                            totalRosses.Dequeue();
+                            break;
+                        }
+                        else if (currentLilie + currentRosse < 15)
+                        {
+                            storedFlowers += currentLilie + currentRosse;
+                            totalLilies.Pop();
+                            totalRosses.Dequeue();
+                            break;
+                        }
+                    }
+
                 }
                 else if (sum < 15)
                 {
-                    storedLilies.Push(currentLilie);
-                    totalLilies.Pop();
-                    stortedRosses.Enqueue(currentRosse);
+                    storedFlowers += currentLilie + currentRosse;
+                    totalLilies.Pop();                    
                     totalRosses.Dequeue();
+                    
+                    
                 }
-
-                if (totalLilies.Any())
-                {
-                    currentLilie = totalLilies.Peek();
-                    currentRosse = totalRosses.Peek();
-                    sum = currentLilie + currentRosse;
-                }
-               
-
+                        
 
             }
-            if (storedLilies.Any())
+            if (storedFlowers>=15)
             {
-
-
-                currentLilie = storedLilies.Peek();
-                currentRosse = stortedRosses.Peek();
-                sum = currentLilie + currentRosse;
-                while (storedLilies.Any())
-                {
-
-
-
-                    if (sum == 15)
-                    {
-                        storedLilies.Pop();
-                        stortedRosses.Dequeue();
-                        sum = currentLilie + currentRosse;
-                        wreathsCounter++;
-
-                    }
-                    else if (sum > 15)
-                    {
-                        currentLilie -= 2;
-                        sum = currentLilie + currentRosse;
-                        continue;
-                    }
-                    else if (sum < 15)
-                    {
-
-                        storedLilies.Pop();
-
-                        stortedRosses.Dequeue();
-                    }
-                    if (storedLilies.Any())
-                    {
-                        currentLilie = storedLilies.Peek();
-                        currentRosse = stortedRosses.Peek();
-                        sum = currentLilie + currentRosse;
-                    }
-                }
+                var extraWreath = storedFlowers / 15;
+                wreathsCounter += extraWreath;
             }
             if (wreathsCounter>=5)
             {
                 Console.WriteLine($"You made it, you are going to the competition with {wreathsCounter} wreaths!");
             }
-            else
+            else if(wreathsCounter<5)
             {
                 Console.WriteLine($"You didn't make it, you need {5-wreathsCounter} wreaths more!");
             }
