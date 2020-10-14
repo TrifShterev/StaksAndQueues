@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple Text Editor", "Simpl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truck Tour", "Truck Tour\Truck Tour.csproj", "{30E8E8C4-694F-4836-846C-76F91AC811E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flower Wreaths ExamPrep", "Flower Wreaths\Flower Wreaths ExamPrep.csproj", "{D281CD3D-0A7C-4C8B-B1E4-5EDB3265DC11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flower Wreaths ExamPrep", "Flower Wreaths\Flower Wreaths ExamPrep.csproj", "{D281CD3D-0A7C-4C8B-B1E4-5EDB3265DC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bombs-ExamPrep", "Bombs-ExamPrep\Bombs-ExamPrep.csproj", "{A1F20C05-843E-4B56-8FA1-7C3FAB00224C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{D281CD3D-0A7C-4C8B-B1E4-5EDB3265DC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D281CD3D-0A7C-4C8B-B1E4-5EDB3265DC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D281CD3D-0A7C-4C8B-B1E4-5EDB3265DC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F20C05-843E-4B56-8FA1-7C3FAB00224C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F20C05-843E-4B56-8FA1-7C3FAB00224C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F20C05-843E-4B56-8FA1-7C3FAB00224C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F20C05-843E-4B56-8FA1-7C3FAB00224C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
